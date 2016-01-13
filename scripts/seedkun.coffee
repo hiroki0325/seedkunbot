@@ -10,5 +10,6 @@ module.exports = (robot) ->
     result = fortunes[random(3)]
     msg.send "今日の運勢: #{result}";
 
-  robot.respond /店長/i, (msg) ->
+  robot.hear /店長/i, (msg) ->
     msg.send "ひな";
+
