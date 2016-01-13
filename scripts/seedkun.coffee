@@ -8,8 +8,7 @@ module.exports = (robot) ->
       '大凶'
     ]
     result = fortunes[random(3)]
-    msg.send "今日の運勢: #{result}"
+    msg.send "今日の運勢: #{result}";
 
-    module.exports = (robot) ->
-      robot.respond /店長/i, (msg) ->
-        msg.send "ひな"
+  robot.respond /店長/i, (msg) ->
+    msg.send "ひな";
